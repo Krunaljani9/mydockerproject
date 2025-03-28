@@ -13,7 +13,10 @@ public class MydockerprojectApplication {
 	public String sayHi(){
 		return "Welcome to My Docker from Github action CI/CD";
 	}
-
+	@GetMapping("/hi")
+	public String sayHello(){
+		return "Hello Docker";
+	}
 	public static void main(String[] args) {
 		SpringApplication.run(MydockerprojectApplication.class, args);
 	}
